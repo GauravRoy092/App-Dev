@@ -6,10 +6,6 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:matcher/matcher.dart';
 
 class Login extends StatelessWidget {
-  var assets;
-
-  var images;
-
   @override
   Widget build(BuildContext context) {
     var login;
