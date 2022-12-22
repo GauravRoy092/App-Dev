@@ -9,7 +9,7 @@ class homepage extends StatelessWidget {
     final int uni = 30;
     return Scaffold(
       appBar: AppBar(
-        title: Text("Unicorn 1"),
+        title: Text("Unicorn"),
       ),
       body: Center(
           child: Container(
