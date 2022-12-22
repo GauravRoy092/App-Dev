@@ -4,16 +4,17 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:matcher/matcher.dart';
 
 class Login extends StatelessWidget {
-  const Login({super.key});
+  var assets;
+
+  var images;
 
   @override
   Widget build(BuildContext context) {
+    var login;
     return Material(
       child: Center(
-        child: Text(
-          "Login Your Acc ount",
-          style: TextStyle(
-              fontWeight: FontWeight.bold, fontSize: 25, color: Colors.teal),
+        child: Column(
+          children: [Image.asset("assets/images/login.jpeg")],
         ),
       ),
     );
