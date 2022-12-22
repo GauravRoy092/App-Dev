@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:unicorn/pages/home.dart';
 import 'package:unicorn/pages/login.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(unicorn());
@@ -15,7 +16,9 @@ class unicorn extends StatelessWidget {
     return MaterialApp(
       //home: homepage(),
       themeMode: ThemeMode.light,
-      theme: ThemeData(primarySwatch: Colors.teal),
+      theme: ThemeData(
+          primarySwatch: Colors.teal,
+          fontFamily: GoogleFonts.lato().fontFamily),
       routes: {
         "/": (context) => Login(),
         "/home": (context) => homepage(),
