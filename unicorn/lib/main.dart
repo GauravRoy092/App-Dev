@@ -20,6 +20,7 @@ class unicorn extends StatelessWidget {
       theme: ThemeData(
           primarySwatch: Colors.teal,
           fontFamily: GoogleFonts.lato().fontFamily),
+      debugShowCheckedModeBanner: false,
       routes: {
         "/": (context) => Login(),
         MyRoutes.homeRoute: (context) => homepage(),
