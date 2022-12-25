@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:unicorn/pages/home.dart';
 import 'package:unicorn/pages/login.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:unicorn/utils/routes.dart';
 
 void main() {
   runApp(unicorn());
@@ -21,8 +22,8 @@ class unicorn extends StatelessWidget {
           fontFamily: GoogleFonts.lato().fontFamily),
       routes: {
         "/": (context) => Login(),
-        "/home": (context) => homepage(),
-        "/login": (context) => Login()
+        MyRoutes.homeRoute: (context) => homepage(),
+        MyRoutes.LoginRoute: (context) => Login()
       },
     );
   }

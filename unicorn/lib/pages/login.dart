@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:matcher/matcher.dart';
+import 'package:unicorn/utils/routes.dart';
 
 class Login extends StatelessWidget {
   @override
@@ -48,14 +49,14 @@ class Login extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 20.0,
+                      height: 40.0,
                     ),
                     ElevatedButton(
                         onPressed: () {
-                          print("Login");
+                          Navigator.pushNamed(context, MyRoutes.homeRoute);
                         },
                         child: Text("login"),
-                        style: TextButton.styleFrom())
+                        style: TextButton.styleFrom(minimumSize: Size(150, 40)))
                   ],
                 ),
               )
