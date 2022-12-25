@@ -36,14 +36,14 @@ class Login extends StatelessWidget {
                   children: [
                     TextFormField(
                       decoration: InputDecoration(
-                        hintText: "Enter your UserName",
+                        hintText: "Enter UserName",
                         labelText: "UserName",
                       ),
                     ),
                     TextFormField(
                       obscureText: true,
                       decoration: InputDecoration(
-                        hintText: "Enter your PassWord",
+                        hintText: "Enter PassWord",
                         labelText: "PassWord",
                       ),
                     ),
