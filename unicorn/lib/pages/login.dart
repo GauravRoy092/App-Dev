@@ -36,16 +36,26 @@ class Login extends StatelessWidget {
                   children: [
                     TextFormField(
                       decoration: InputDecoration(
-                        hintText: "Enter UserName",
+                        hintText: "Enter your UserName",
                         labelText: "UserName",
                       ),
                     ),
                     TextFormField(
+                      obscureText: true,
                       decoration: InputDecoration(
-                        hintText: "Enter PassWord",
+                        hintText: "Enter your PassWord",
                         labelText: "PassWord",
                       ),
                     ),
+                    SizedBox(
+                      height: 20.0,
+                    ),
+                    ElevatedButton(
+                        onPressed: () {
+                          print("Login");
+                        },
+                        child: Text("login"),
+                        style: TextButton.styleFrom())
                   ],
                 ),
               )
