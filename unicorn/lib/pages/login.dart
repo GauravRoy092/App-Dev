@@ -7,12 +7,12 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:matcher/matcher.dart';
 import 'package:unicorn/utils/routes.dart';
 
-class LoginPage extends StatefulWidget {
+class Login extends StatefulWidget {
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _LoginState createState() => _LoginState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _LoginState extends State<Login> {
   String name = "";
   bool changeButton = false;
 
