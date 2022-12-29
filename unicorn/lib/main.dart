@@ -22,7 +22,7 @@ class unicorn extends StatelessWidget {
           fontFamily: GoogleFonts.lato().fontFamily),
       debugShowCheckedModeBanner: false,
       routes: {
-        "/": (context) => homepage(),
+        "/": (context) => Login(),
         MyRoutes.homeRoute: (context) => homepage(),
         MyRoutes.LoginRoute: (context) => Login()
       },
