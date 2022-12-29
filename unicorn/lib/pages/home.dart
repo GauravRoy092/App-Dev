@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:unicorn/main.dart';
+import 'package:unicorn/widgets/drawer.dart';
 
 class homepage extends StatelessWidget {
   const homepage({super.key});
@@ -15,7 +16,7 @@ class homepage extends StatelessWidget {
           child: Container(
         child: Container(child: Text("welcome Our $uni Unicorns")),
       )),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
