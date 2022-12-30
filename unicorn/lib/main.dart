@@ -3,6 +3,7 @@ import 'package:unicorn/pages/home.dart';
 import 'package:unicorn/pages/login.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:unicorn/utils/routes.dart';
+import 'package:unicorn/widgets/theme.dart';
 
 void main() {
   runApp(unicorn());
@@ -17,9 +18,8 @@ class unicorn extends StatelessWidget {
     return MaterialApp(
       //home: homepage(),
       themeMode: ThemeMode.light,
-      theme: ThemeData(
-          primarySwatch: Colors.teal,
-          fontFamily: GoogleFonts.lato().fontFamily),
+      theme: MyTheme.lightTheme(context),
+      darkTheme: MyTheme.darkTheme(context),
       debugShowCheckedModeBanner: false,
       routes: {
         "/": (context) => homepage(),
