@@ -24,7 +24,7 @@ class unicorn extends StatelessWidget {
       routes: {
         "/": (context) => homepage(),
         MyRoutes.homeRoute: (context) => homepage(),
-        MyRoutes.LoginRoute: (context) => Login()
+        MyRoutes.LoginRoute: (context) => Login(),
       },
     );
   }
