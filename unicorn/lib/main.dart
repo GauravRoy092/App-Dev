@@ -22,7 +22,7 @@ class unicorn extends StatelessWidget {
       darkTheme: MyTheme.darkTheme(context),
       debugShowCheckedModeBanner: false,
       routes: {
-        "/": (context) => HomePage(),
+        "/": (context) => Login(),
         MyRoutes.homeRoute: (context) => HomePage(),
         MyRoutes.LoginRoute: (context) => Login(),
       },
